@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Open Sans', sans-serif;
+}
+.app {
+    min-width: 100%;
+    min-height: 100%;
+}
+#tapToStart {
+    width: 200px;
+    height: 35px;
+    border: 2.3px dotted black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 200px auto;
+    padding: 3.5px;
+    cursor: pointer;
+}
+.show-quiz {
+    display: none;
+}
+.question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.question {
+    min-width: 80px;
+    min-height: 15px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(240, 239, 239);
+}
+.choices-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.choices-row div {
+    min-width: 200px;
+    min-height: 40px;
+    background-color: rgb(240, 239, 239);
+    border: 2px solid black;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.time {
+    text-align: center;
+    padding: 30px;
+}
+.ps {
+    visibility: hidden;
+    color: #cfcfcf;
+    text-align: center;
+    transition: all .7s;
+}
+.ps:hover {
+    font-weight: 900;
+    font-style: 50px;
+    color: red;
+}
